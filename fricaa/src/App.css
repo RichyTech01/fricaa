@@ -1,0 +1,1422 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+body{
+    width: 100%;
+    background:linear-gradient(45deg, #3e123e,
+  #181518, #181518,#3e123e );
+}
+
+.App{
+    font-family: 'inter';
+    height: 124vh;
+    width: 100%;
+}
+.nav-btn{
+    display: flex;
+    justify-content: center;
+flex-direction: row;
+align-items: center;
+gap: 70%;
+width: 100%;
+
+height: 2vh;
+margin-top: 2.2em;
+
+}
+
+
+
+.contact{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+color: white;
+font-weight: 400em;
+font-size: 16px;
+font-family: 'inter';
+margin-top: 0.2em;
+border: none;
+width: 127px;
+height: 50px;
+background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+border-radius: 100px;
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.contact:hover {
+    background: linear-gradient(101.77deg, #E4317D 19.56%, #F94A3F 70.6%);
+}
+.all-cont{
+    width: 100%;
+    display: flex;
+    gap: 2em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    position: relative;
+    width: 100%;
+    margin-top: -4em;
+    height: 40vh;
+    margin-left: calc(2em - 3em);
+    max-width: 500px;
+    font-weight: bolder;
+    font-size: 2.7em;
+    line-height: 1.7em;
+    color: #FFFFFF;
+}
+
+.earn{
+    color: white;
+}
+
+.waiting{
+    color: #E4317D;
+}
+
+.content-why{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.why{
+    width: 96%;
+    max-width: 540px;
+    margin-top: 2%;
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #968C9E;
+}
+.form{
+    position: relative;
+    max-width: 530px;
+width: 90%;
+margin-right: em;
+height: 100vh;
+margin-top: 6em;
+background: #211921;
+border-radius: 20px;
+
+}
+.get{
+    position: relative;
+    width: 95%;
+    margin: 1.5em auto;
+    max-width: 520px;
+    height: 37vh;
+    background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+    border-radius: 12px;
+
+}
+.fricaa-coin{
+    position: relative;
+    width: 80%;
+    max-width: 253px;
+    height: 6vh;
+    left: 1em;
+    top: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.entering{
+    position: absolute;
+    width: 70%;
+    height: auto;
+    left: 1.7em;
+    top: 98px;
+    font-weight: lighter;
+    font-family: 'Inter';
+    font-size: 0.9em;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #EDEDED;
+}
+.rect{
+    position: relative;
+width: 50px;
+height: 1.8em;
+margin-left: 80%;
+background: #FFFFFF;
+border-radius: 15px;
+margin-top: -15.5em;
+
+}
+#form-header-coin{
+    position: relative;
+    width: 1.2em;
+    height: 1.2em;
+    top: 0.3em;
+    margin-left: 5px;
+}
+.letter-0{
+    position: relative;
+    top:calc(2em - 3.2em);
+    font-weight: 800px;
+    margin-left: 1.7em;
+}
+.coin{
+    position: absolute;
+    bottom: 20em;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+}
+.first{
+    position: absolute;
+    height: 2em;
+    left: 3%;
+    top: 18.3em;
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #968C9E;
+}
+#first-name{
+    position: absolute;
+    outline: #E4317D;
+width: 45%;
+height: 3.6em;
+left: 1.3em;
+top: 23.1em;
+font-size: 14px;
+background: #2F242F;
+border-radius: 7px;
+border: none;
+color: white;
+}
+.last{
+    position: absolute;
+height: 2em;
+left: 52%;
+top: 18.3em;
+font-family: 'Inter';
+font-size: 16px;
+display: flex;
+align-items: center;
+color: #968C9E;
+
+}
+#last-name{
+    position: absolute;
+width: 45%;
+height: 3.6em;
+left: 52%;
+top: 23.1em;
+outline: #E4317D;
+font-size: 14px;
+background: #2F242F;
+border: 1px solid #2F242F;
+color: white;
+border-radius: 7px;
+}
+.phone-number{
+    position: absolute;
+left: 3%;
+top: 25em;
+outline: #E4317D;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+display: flex;
+align-items: center;
+color: #968C9E;
+}
+#phone{
+    position: absolute;
+width: 94%;
+outline: #E4317D;
+height: 3.6em;
+top: 31em;
+color: white;
+background: #2F242F;
+border-radius: 7px;
+font-size: 14px;
+left: 3%;
+border: none;
+}
+
+#submit{
+    position: absolute;
+    width: 95%;
+    height: 55px;
+    left: 0.9em;
+    top: 540px;
+     background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+   border-radius: 32px;
+   font-family: 'Inter';
+   font-size: 17px;
+   text-align: center;
+   cursor: pointer;
+   color: #FFFFFF;
+   opacity: 0.3;
+}
+         /* larger screen laptop*/
+@media (min-width: 1200px){
+    
+    .nav-btn{
+    gap: 48em;
+    }
+    
+    .contact{
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    color: white;
+    font-size: 16px;
+    font-family: 'inter';
+    border: none;
+    width: 8em;
+    height: 3.4em;
+    background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+    border-radius: 100px;
+    order: 1;
+    flex-grow: 0;
+    
+    }
+    
+    .all-cont{
+        max-width: 100%;
+        width: 98%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .content{
+        width: 90%;
+        top: -4em;
+        max-width: 400px;
+        height: 20vh;
+        font-size: 2.9em;
+        color: #FFFFFF;
+        margin: 0 auto;
+    }
+    .coin1{
+        margin-top: -50em;
+        max-width: 300em;
+        margin-left: 295%;
+    }
+    #coin-1{
+        height: 350px;
+        width: 350px;
+        transform:  rotate(-90deg);
+       
+    }
+
+    #coin-2{
+        height: 350px;
+        width: 350px;
+    }
+    .coinbg{
+        margin-top: 28em;
+        margin-left: 9em;
+
+    }
+   
+
+    }
+   
+    .waiting{
+        color:  linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+    }
+    .why-container{
+      position: relative;
+        margin-top: 22em;
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    .why-container .why{
+        width: 88%;
+        max-width: 450px;
+        height: 8vh;
+        margin-top: -35em;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        color: #968C9E;
+    }
+    .form{
+    width: 93%;
+    max-width: 550px;
+    max-height: 37em;
+    margin-top: 3em;
+    
+    background: #211921;
+    border-radius: 20px;
+    
+    }
+    .get{
+        width: 93%;
+        max-width: 100%;
+        margin: 1em auto;
+        max-height: 13em;
+        background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+        border-radius: 12px;
+    
+    }
+    /* join htousands of users */
+    .fricaa-coin{
+        width: 45%;
+        height: 6vh;
+        left: 1em;
+        top: 1.8em;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 24px;
+        line-height: 33px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    .entering{
+        width: 60%;
+        height: 6vh;
+        left: 2em;
+        font-weight: 500rem;
+        top: 8.7em;
+        font-family: 'Inter';
+        font-size: 0.85em;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        color: #EDEDED;
+    }
+    #coins{
+      position: relative;
+      margin-top: -29%;
+      margin-left: 70%;
+      
+    }
+    
+    .first{
+        height: 2em;
+        top: 14.6em;
+        font-family: 'Inter';
+        font-size: 17px;
+        color: #968C9E;
+    }
+    #first-name{
+    width: 45%;
+    height: 3.2em;
+    top: 16.4em;
+    margin-left: -1%;
+    font-size: 17px;
+    background: #2F242F;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: white;
+    }
+    #first-name:focus {
+        outline: 1px solid #F94A3F;
+    }
+    .last{
+    height: 2em;
+    left: 52%;
+    top: 14.3em;
+    font-family: 'Inter';
+    font-size: 17px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #968C9E;
+    
+    }
+    #last-name{
+    width: 45%;
+    height: 3.2em;
+    left: 16.6em;
+    top: 16.4em;
+    font-size: 17px;
+    outline: none;
+    background: #2F242F;
+    border: 1px solid #2F242F;
+    color: white;
+    border-radius: 7px;
+    }
+    #last-name:focus {
+        outline: 1px solid #F94A3F;
+    }
+    .phone-number{
+    top: 21em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #968C9E;
+    }
+
+    #phone{
+    width: 93.1%;
+    height: 3.3em;
+    top: 23em;
+    outline: none;
+    color: white;
+    background: #2F242F;
+    border-radius: 7px;
+    font-size: 17px;
+    border: none;
+    }
+    #phone:focus {
+        outline: 1px solid #F94A3F;
+    }
+    #submit{
+        width: 93.4%;
+        height: 3.5em;
+        top: 31em;
+         background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+       border-radius: 32px;
+       font-family: 'Inter';
+       font-size: 16px;
+       text-align: center;
+       cursor: pointer;
+       color: #FFFFFF;
+       opacity: 0.3;
+    }
+    
+
+/*           tablet screen            */
+
+
+    
+    @media screen and (max-width: 1250px){
+        *{
+            box-sizing: border-box;
+        }
+        .App{
+            height: 100vh; 
+            width: auto;  
+         }
+        .nav-btn{
+            gap: 40em;
+            width: 70%;
+            margin: 2em auto;
+            max-width: 700px;
+            }
+
+            .all-cont{
+                max-width: 100%;
+                width: 98%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .content{
+                width: 78%;
+                top: -5em;
+                max-width: 400px;
+                height: 20vh;
+                font-size: 2.8em;
+                color: #FFFFFF;
+                margin: 0 auto;
+            }
+            .coin1{
+                margin-top: -45em;
+                max-width: 300em;
+                margin-left: 225%;
+            }
+            #coin-1{
+                height: 350px;
+                width: 350px;
+                transform:  rotate(-90deg);
+               
+            }
+        
+            #coin-2{
+                height: 350px;
+                width: 350px;
+            }
+            .coinbg{
+                margin-top: 21em;
+                margin-left: 9em;
+        
+            }
+           
+            .waiting{
+                color:  linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+            }
+            .why-container{
+              position: relative;
+                margin-top: 19em;
+                max-width: 500px;
+                display: flex;
+                justify-content: center;
+            }
+            .why-container .why{
+                width: 88%;
+                max-width: 450px;
+                height: 8vh;
+                margin-top: -35em;
+                font-size: 1.3em;
+                line-height: 1.5em;
+                color: #968C9E;
+            }
+            .form{
+            width: 93%;
+            max-width: 450px;
+            max-height: 37em;
+            margin-top: -2em;
+            right: 2em;
+            background: #211921;
+            border-radius: 20px;
+            
+            }
+            .get{
+                width: 93%;
+                max-width: 100%;
+                margin: 1em auto;
+                max-height: 13em;
+                background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+                border-radius: 12px;
+            
+            }
+            /* join htousands of users */
+            .fricaa-coin{
+                width: 45%;
+                height: 6vh;
+                left: 1em;
+                top: 1.8em;
+                font-family: 'Inter';
+                font-style: normal;
+                font-size: 24px;
+                font-weight: 550;
+                line-height: 33px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+            }
+            .entering{
+                width: 60%;
+                height: 6vh;
+                left: 2em;
+                font-weight: 500rem;
+                top: 8.8em;
+                font-family: 'Inter';
+                font-size: 0.85em;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                color: #EDEDED;
+            }
+            #coins{
+              position: relative;
+              margin-top: -30%;
+              margin-left: 70%;
+              
+            }
+            
+            .first{
+                height: 2em;
+                top: 14.6em;
+                font-family: 'Inter';
+                font-size: 17px;
+                color: #968C9E;
+            }
+            #first-name{
+            width: 44%;
+            height: 3.2em;
+            top: 16.4em;
+            margin-left: -1%;
+            font-size: 17px;
+            background: #2F242F;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            color: white;
+            }
+            #first-name:focus {
+                outline: 1px solid #F94A3F;
+            }
+            .last{
+            height: 2em;
+            left: 52%;
+            top: 14.3em;
+            font-family: 'Inter';
+            font-size: 17px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            color: #968C9E;
+            
+            }
+            #last-name{
+            width: 44%;
+            height: 3.2em;
+            left: 13.8em;
+            top: 16.4em;
+            font-size: 17px;
+            outline: none;
+            background: #2F242F;
+            border: 1px solid #2F242F;
+            color: white;
+            border-radius: 7px;
+            }
+            #last-name:focus {
+                outline: 1px solid #F94A3F;
+            }
+            .phone-number{
+            top: 21em;
+            font-family: 'Inter';
+            font-style: normal;
+            font-size: 17px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            color: #968C9E;
+            }
+        
+            #phone{
+            width: 93.1%;
+            height: 3.3em;
+            top: 23em;
+            outline: none;
+            color: white;
+            background: #2F242F;
+            border-radius: 7px;
+            font-size: 17px;
+            border: none;
+            }
+            #phone:focus {
+                outline: 1px solid #F94A3F;
+            }
+            #submit{
+                width: 93.4%;
+                height: 3.5em;
+                top: 31em;
+                 background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+               border-radius: 32px;
+               font-family: 'Inter';
+               font-size: 16px;
+               text-align: center;
+               cursor: pointer;
+               color: #FFFFFF;
+               opacity: 0.3;
+            }
+
+            
+        }
+
+        @media screen and (max-width: 1020px) {
+            
+            
+                *{
+                    box-sizing: border-box;
+                }
+                .App{
+                    height: 100vh; 
+                 }
+                .nav-btn{
+                    gap: 72%;
+                    width: 70%;
+                    margin: 2em auto;
+                    max-width: 600px;
+                    }
+                    .all-cont{
+                        max-width: 800px;
+                        width: 98%;
+                        margin: 0 auto;
+                    }
+                    .content{
+                        top: -5em;
+                        width: 80%;
+                        max-width: 390px; 
+                        height: 20vh;
+                        font-size: 2.8em;
+                        line-height: 1.7em;
+                        color: #FFFFFF;
+                    }
+            
+                    .coin1{
+                        margin-top: -43em;
+                        max-width: 300em;
+                        margin-left: 205%;
+                    }
+                    #coin-1{
+                        height: 350px;
+                        width: 350px;
+                        transform:  rotate(-90deg);
+                       
+                    }
+            
+                    #coin-2{
+                        height: 350px;
+                        width: 350px;
+                    }
+                    .coinbg{
+                        margin-top: 19em;
+                        margin-left: -3em;
+            
+                    }
+                   
+                    .why-container .why{
+                        width: 87%;
+                        margin-top: -8em;
+                        height: 100%;
+                        max-width: 500px;
+                        font-size: 1.3em;
+                        line-height: 1.4em;
+                        color: #968C9E;
+                        margin-left: 1em;
+                    }
+                    .form{
+                      width: 85%;
+                      margin: 0 auto;
+                      max-width: 370px;
+                      max-height: 678px;
+                      margin-top: 2em;
+                      margin-right: -1em;
+                      
+                      background: #211921;
+                      border-radius: 20px;
+                      
+                      }
+                      .get{
+                          width: 92%;
+                          max-width: 100%;
+                          margin: 1em auto;
+                          min-height: 21vh;
+                          background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+                          border-radius: 12px;
+                      
+                      }
+                      /* join htousands of users */
+                      .fricaa-coin{
+                          width: 80%;
+                          max-width: 15em;
+                          height: 6vh;
+                          top: em;
+                          left: 0.7em;
+                          font-family: 'Inter';
+                          font-style: normal;
+                          font-size: 25px;
+                          line-height: 33px;
+                      }
+                      .entering{
+                          width: 90%;
+                          height: 6vh;
+                          left: 1.4em;
+                          font-weight: 500rem;
+                          top: 8.4em;
+                          font-family: 'Inter';
+                          font-size: 0.85em;
+                          line-height: 150%;
+                          display: flex;
+                          align-items: center;
+                          color: #EDEDED;
+                      }
+                      #coins{
+                        position: relative;
+                        margin-top: calc(2em - 11em);
+                        margin-left: 13em;
+                        
+                      }
+                      
+                      .first{
+                        left: 4%;
+                          height: 2em;
+                          top: 255px;
+                          font-family: 'Inter';
+                          font-size: 17px;
+                          color: #968C9E;
+                      }
+                      #first-name{
+                      width: 92%; 
+                      height: 4em;
+                      top: 22em;
+                      font-size: 13px;
+                      background: #2F242F;
+                      border-radius: 7px;
+                      border: none;
+                      outline: none;
+                      color: white;
+                      }
+                      #first-name:focus{
+                        outline: 1px solid#F94A3F;
+                    }
+                      .last{
+                      height: 2em;
+                      left: 4%;
+                      top: 352px;
+                      font-family: 'Inter';
+                      font-size: 17px;   
+                      line-height: 150%;
+                      display: flex;
+                      align-items: center;
+                      color: #968C9E;
+                      
+                      }
+                      #last-name{
+                      width: 92%;
+                      height: 4em;
+                      left: 1em;
+                      top: 390px;
+                      font-size: 13px;
+                      outline: none;
+                      background: #2F242F;
+                      border: 1px solid #2F242F;
+                      color: white;
+                      border-radius: 7px;
+                      }
+                      #last-name:focus{
+                        outline: 1px solid#F94A3F;
+                    }
+                      #phone{
+                        width: 92%;
+                        height: 53px;
+                        top: 38em;
+                        color: white;
+                        background: #2F242F;
+                        border-radius: 7px;
+                        font-size: 13px;
+                        left: 3.5%;
+                        border: none;
+                        }
+                    #phone:focus{
+                        outline: 1px solid#F94A3F;
+                    }
+                        .phone-number{
+                            height: 20px;
+                            left: 4%;
+                            top: 465px;
+                            outline: none;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 150%;
+                            display: flex;
+                            align-items: center;
+                            color: #968C9E;
+                            }
+                     
+                      #submit{
+                          width: 94%;
+                          left: 3%;
+                          height: 55px;
+                          top: 36.8em;
+                           background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+                         border-radius: 32px;
+                         font-family: 'Inter';
+                         font-size: 16px;
+                         text-align: center;
+                         cursor: pointer;
+                         color: #FFFFFF;
+                         opacity: 0.3;
+                      }
+                    }
+
+
+                    @media screen and (max-width: 738px ){
+
+                        body{
+                            background:#0F0D0F;
+                            display: flex;
+                            justify-content: center;
+                            margin: 0 auto;
+                        }
+                       
+
+                        .App{
+                            width: 100%;
+                            min-height: 70em;
+
+                        }
+
+                        
+                        .nav-btn{
+                            gap: 40%;
+                            width: 90%;
+                            margin-top: 2em;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            }
+                        .contact{
+                            display: flex;
+                        flex-direction: row;
+                        padding: 0px;
+                        color: white;
+                        font-size: 16px;
+                        font-family: 'inter';
+                        border: none;
+                        width: 113px;
+                        height: 50px;
+                        background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+                        border-radius: 100px;
+                        order: 1;
+                        flex-grow: 0;
+                        
+                        }
+                      
+                        .all-cont{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+                        .content{
+                            top: -8em;
+                            width: 94%;
+                            margin-left: 6%;
+                            max-width: 500px;
+                            height: 20vh;
+                            font-size: 1.9em;
+                            line-height: 1.8em;
+                            color: #FFFFFF;
+                        }
+                            .coin1{
+                                margin-top: -53em;
+                                max-width: 300em;
+                                margin-left: 20%;
+                            }
+                            #coin-1{
+                                height: 350px;
+                                width: 350px;
+                                transform:  rotate(-90deg);
+                               
+                            }
+                    
+                            #coin-2{
+                                height: 350px;
+                                width: 350px;
+                            }
+                            .coinbg{
+                                margin-top: 29em;
+                                margin-left: -29em;
+                    
+                            }
+                        
+                        .waiting{
+                            color:  linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+                        }
+                        .why-container{
+                          position: relative;
+                            max-width: 600px;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .why-container .why{
+                            width: 90%;
+                            max-width: 500px;
+                            height: 8vh;
+                            font-size: 1.2em;
+                            font-weight: 200em;
+                            line-height: 1.5em;
+                            color: #968C9E;
+                            margin-top: -54em;
+                        }
+
+                        .form{
+                            width: 91%;
+                            max-width: 480px;
+                            min-height: 68vh;
+                            margin-top: -32em;
+                            background: #211921;
+                            border-radius: 20px;
+                            }
+                            .get{
+                                width: 92%;
+                                max-width: 100%;
+                                margin: 1em auto;
+                                height: 30vh;
+                                background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+                                border-radius: 12px;
+                            
+                            }
+                            /* join htousands of users */
+                            .fricaa-coin{
+                                width: 80%;
+                                max-width: 15em;
+                                height: 6vh;
+                                top: em;
+                                left: 0.7em;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-size: 25px;
+                                line-height: 33px;
+                            }
+                            .entering{
+                                width: 90%;
+                                height: 6vh;
+                                left: 1.4em;
+                                font-weight: 500rem;
+                                top: 8.4em;
+                                font-family: 'Inter';
+                                font-size: 0.85em;
+                                line-height: 150%;
+                                display: flex;
+                                align-items: center;
+                                color: #EDEDED;
+                            }
+                            #coins{
+                              position: relative;
+                              margin-top: calc(2em - 11em);
+                              margin-left: 64%;
+                              
+                            }
+                            
+                            .first{
+                              left: 4%;
+                                height: 2em;
+                                top: 255px;
+                                font-family: 'Inter';
+                                font-size: 17px;
+                                color: #968C9E;
+                            }
+                            #first-name{
+                            width: 92%; 
+                            height: 4em;
+                            top: 22em;
+                            font-size: 13px;
+                            background: #2F242F;
+                            border-radius: 7px;
+                            border: none;
+                            outline: none;
+                            color: white;
+                            }
+                            #first-name:focus{
+                              outline: 1px solid#F94A3F;
+                          }
+                            .last{
+                            height: 2em;
+                            left: 4%;
+                            top: 352px;
+                            font-family: 'Inter';
+                            font-size: 17px;   
+                            line-height: 150%;
+                            display: flex;
+                            align-items: center;
+                            color: #968C9E;
+                            
+                            }
+                            #last-name{
+                            width: 92%;
+                            height: 4em;
+                            left: 1em;
+                            top: 390px;
+                            font-size: 13px;
+                            outline: none;
+                            background: #2F242F;
+                            border: 1px solid #2F242F;
+                            color: white;
+                            border-radius: 7px;
+                            }
+                            #last-name:focus{
+                              outline: 1px solid#F94A3F;
+                          }
+                            #phone{
+                              width: 92%;
+                              height: 53px;
+                              top: 38em;
+                              color: white;
+                              background: #2F242F;
+                              border-radius: 7px;
+                              font-size: 13px;
+                              left: 3.5%;
+                              border: none;
+                              }
+                          #phone:focus{
+                              outline: 1px solid#F94A3F;
+                          }
+                              .phone-number{
+                                  height: 20px;
+                                  left: 4%;
+                                  top: 465px;
+                                  outline: none;
+                                  font-family: 'Inter';
+                                  font-style: normal;
+                                  font-weight: 500;
+                                  font-size: 16px;
+                                  line-height: 150%;
+                                  display: flex;
+                                  align-items: center;
+                                  color: #968C9E;
+                                  }
+                           
+                            #submit{
+                                width: 94%;
+                                left: 3%;
+                                height: 55px;
+                                top: 36.8em;
+                                 background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+                               border-radius: 32px;
+                               font-family: 'Inter';
+                               font-size: 16px;
+                               text-align: center;
+                               cursor: pointer;
+                               color: #FFFFFF;
+                               opacity: 0.3;
+                            }
+                        
+                    }
+
+                    @media screen and (max-width: 440px ){
+
+                        body{
+                            background:#0F0D0F;
+                            display: flex;
+                            justify-content: center;
+                        }
+                       
+
+                        .App{
+                            width: 100%;
+                            min-height: 70em;
+
+                        }
+
+                        
+                        .nav-btn{
+                            margin-left: 3.5em;
+                            gap: 35%;
+                            width: 90%;
+                            margin-top: 2em;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            }
+                        .contact{
+                            display: flex;
+                        flex-direction: row;
+                        padding: 0px;
+                        color: white;
+                        font-size: 16px;
+                        font-family: 'inter';
+                        border: none;
+                        width: 113px;
+                        height: 50px;
+                        background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+                        border-radius: 100px;
+                        order: 1;
+                        flex-grow: 0;
+                        
+                        }
+                      
+                        .all-cont{
+                            width: 100%;
+                            margin-left: 2.3em;
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+                        .content{
+                            top: -9.2em;
+                            width: 98%;
+                            left: -1.2%;
+                            max-width: 410px;
+                            height: 20vh;
+                            font-size: 1.8em;
+                            line-height: 1.8em;
+                            color: #FFFFFF;
+                        }
+                            .coin1{
+                                margin-top: -53em;
+                                max-width: 300em;
+                                margin-left: 35%;
+                            }
+                            #coin-1{
+                                height: 350px;
+                                width: 350px;
+                                transform:  rotate(-90deg);
+                               
+                            }
+                    
+                            #coin-2{
+                                height: 350px;
+                                width: 350px;
+                            }
+                            .coinbg{
+                                margin-top: 29em;
+                                margin-left: -29em;
+                    
+                            }
+                        
+                        .waiting{
+                            color:  linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+                        }
+                        .why-container{
+                          position: relative;
+                            max-width: 400px;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .why-container .why{
+                            width: 98%;
+                            max-width: 400px;
+                            height: 8vh;
+                            font-size: 1.2em;
+                            font-weight: 200em;
+                            line-height: 1.5em;
+                            color: #968C9E;
+                            margin-top: -53.5em;
+                        }
+                        
+                        .form{
+                            width: 92%;
+                            max-width: 400px;
+                            min-height: 68vh;
+                            margin-top: -30em;
+                            background: #211921;
+                            border-radius: 20px;
+                            }
+                            .get{
+                                width: 92%;
+                                max-width: 100%;
+                                margin: 1em auto;
+                                height: 30vh;
+                                background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+                                border-radius: 12px;
+                            
+                            }
+                            /* join htousands of users */
+                            .fricaa-coin{
+                                width: 80%;
+                                max-width: 15em;
+                                height: 6vh;
+                                top: em;
+                                left: 0.7em;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-size: 25px;
+                                line-height: 33px;
+                            }
+                            .entering{
+                                width: 90%;
+                                height: 6vh;
+                                left: 1.4em;
+                                font-weight: 500rem;
+                                top: 8.4em;
+                                font-family: 'Inter';
+                                font-size: 0.85em;
+                                line-height: 150%;
+                                display: flex;
+                                align-items: center;
+                                color: #EDEDED;
+                            }
+                            #coins{
+                              position: relative;
+                              margin-top: calc(2em - 11em);
+                              margin-left: 66%;
+                              
+                            }
+                            
+                            .first{
+                              left: 4%;
+                                height: 2em;
+                                top: 255px;
+                                font-family: 'Inter';
+                                font-size: 17px;
+                                color: #968C9E;
+                            }
+                            #first-name{
+                            width: 92%; 
+                            height: 4em;
+                            top: 22em;
+                            font-size: 13px;
+                            background: #2F242F;
+                            border-radius: 7px;
+                            border: none;
+                            outline: none;
+                            color: white;
+                            }
+                            #first-name:focus{
+                              outline: 1px solid#F94A3F;
+                          }
+                            .last{
+                            height: 2em;
+                            left: 4%;
+                            top: 352px;
+                            font-family: 'Inter';
+                            font-size: 17px;   
+                            line-height: 150%;
+                            display: flex;
+                            align-items: center;
+                            color: #968C9E;
+                            
+                            }
+                            #last-name{
+                            width: 92%;
+                            height: 4em;
+                            left: 1em;
+                            top: 390px;
+                            font-size: 13px;
+                            outline: none;
+                            background: #2F242F;
+                            border: 1px solid #2F242F;
+                            color: white;
+                            border-radius: 7px;
+                            }
+                            #last-name:focus{
+                              outline: 1px solid#F94A3F;
+                          }
+                            #phone{
+                              width: 92%;
+                              height: 53px;
+                              top: 38em;
+                              color: white;
+                              background: #2F242F;
+                              border-radius: 7px;
+                              font-size: 13px;
+                              left: 3.5%;
+                              border: none;
+                              }
+                          #phone:focus{
+                              outline: 1px solid#F94A3F;
+                          }
+                              .phone-number{
+                                  height: 20px;
+                                  left: 4%;
+                                  top: 465px;
+                                  outline: none;
+                                  font-family: 'Inter';
+                                  font-style: normal;
+                                  font-weight: 500;
+                                  font-size: 16px;
+                                  line-height: 150%;
+                                  display: flex;
+                                  align-items: center;
+                                  color: #968C9E;
+                                  }
+                           
+                            #submit{
+                                width: 94%;
+                                left: 3%;
+                                height: 55px;
+                                top: 36.8em;
+                                 background: linear-gradient(101.77deg, #F94A3F 19.56%, #E4317D 70.6%);
+                               border-radius: 32px;
+                               font-family: 'Inter';
+                               font-size: 16px;
+                               text-align: center;
+                               cursor: pointer;
+                               color: #FFFFFF;
+                               opacity: 0.3;
+                            }
+                        
+                    }

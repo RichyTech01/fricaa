@@ -1,12 +1,22 @@
 import { useState } from 'react';
 const Form = () => {
-  const[firstName, setFirstName] = useState('');
-  const [lastName, setLastName] =useState('');
-    const [tel, setTel] = useState()
+  const [inputs, setInputs] = useState({
+    firstName: '',
+    lastName: '',
+    tel: ''
+  });
 
-    const handleSubmit = (e)=> {
-      
-    }
+  const handleChange = e => {
+    setInputs({ ...inputs, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    console.log(inputs);
+  };
+
+  const isDisabled = !inputs.firstName || !inputs.lastName || !inputs.tel;
+
     return ( 
       <main>
         <div className='formdiv'>
@@ -14,27 +24,28 @@ const Form = () => {
             <label htmlFor="firstName" className='first'>First name</label>
             <input 
             type="text"
-            name='First-name'
+            name='firstName'
             id='first-name'
-            required
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
+            value={inputs.firstName}
+            onChange={handleChange}
               />
               <label htmlFor="Last name" className='last'>Last name</label>
-              <input type="text" name="Last name" id="last-name"
-              required
-              value={lastName}
-              onChange={(e)=> setLastName(e.target.value)}
+              <input
+                type="text" 
+                name="lastName" 
+                id="last-name"
+              value={inputs.lastName}
+              onChange={handleChange}
                />
                <label htmlFor="phone number" className='phone-number'>Phone number</label>
-            
                 <input
+                name='tel'
                 id="phone"
-                required
-                value={tel}
-                onChange={e => setTel(e.target.value)}
+                value={inputs.tel}
+                onChange={handleChange}
                  />
-                 <button id='submit' onClick={handleSubmit}>Join Waiting List</button>
+                 <button type='submit' id='submit' disabled={isDisabled}>Join Waiting List</button>
+                 
             
             </form>
             </div>
